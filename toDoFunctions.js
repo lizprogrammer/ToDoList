@@ -32,8 +32,6 @@ displayToDos();
 
 addToDos("item 4");
 
-
-
 changeToDos(0,'changed');
 deleteToDos(0);
 
