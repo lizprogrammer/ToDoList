@@ -10,21 +10,21 @@ sayHiTo('Liz');
 toDos = ['item 1', 'item 2', 'item 3'];
 
 function displayToDos(){
-    console.log('My ToDos: ' + toDos);
+    console.log('My ToDos: ' + this.toDos);
 }
 
 function addToDos(newValue){
-    toDos.push(newValue);
+    this.toDos.push(newValue);
     displayToDos();
 }
 
 function changeToDos(position, newValue){
-    toDos[position] = newValue;
+    this.toDos[position] = newValue;
     displayToDos();
 }
 
 function deleteToDos(position){
-    toDos.splice(position,1);
+    this.toDos.splice(position,1);
     displayToDos();
 }
 
