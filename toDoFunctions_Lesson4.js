@@ -12,7 +12,7 @@ var todoList = {
         this.displayTodos();
     },
     changeTodo: function(position, todoText){
-        this.todos[position].todoText = todoText;
+        this.todo[position].todoText = todoText;
         this.displayTodos();
     },
     delteTodo: function(position){
@@ -21,6 +21,13 @@ var todoList = {
     },
     toggleCompleted: function(position){
         var todo = this.todos[position];
-        
+        console.log(todo);
+        todo.completed = !todo.completed;
+        this.displayTodos();
     },
 }
+
+todoList.addTodo("item 1")
+todoList.displayTodos();
+todoList.toggleCompleted(0);
+todoList.displayTodos();
