@@ -1,0 +1,45 @@
+for(var i = 0; i < 3; i ++){
+    console.log('hey');
+
+
+}
+
+for(var i = 0; i < 3; i ++){
+    console.log(i);
+
+
+}
+var testArray = ['item 1', 'item 2', 'item 3'];
+testArray.push('extra item');
+//console.log(testArray[0]);
+//console.log(testArray[1]);
+//console.log(testArray[2]);
+for(var i = 0; i < 3; i ++){
+    console.log(testArray[i]);
+}
+
+var todoList = {
+    todos:[],
+    displayTodos: function(){
+        console.log('My Todos');
+        for(var i = 0; i < this.todos.length; i++){
+        console.log(this.todos[i].todoText);
+        }
+    },
+    addTodo: function(todoText){
+        this.todos.push({
+            todoText: todoText,
+            completed: false
+        });
+        this.displayTodos();
+    },
+
+    changeTodo: function(position, todoText){
+        this.todos[position].todoText = todoText;
+        this.displayTodos();
+
+    }
+
+
+}
+
