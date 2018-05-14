@@ -9,7 +9,6 @@
 //-- Undefined
 //-- Null
 
-
 // String
 var myString = "Hello! I'm a string!";
 console.log(myString === "Hello! I'm a string!")
