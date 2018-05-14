@@ -64,11 +64,14 @@ var todoList = {
     toggleAll: function(){
         var totalTodos = this.todos.length;;
         var completedTodos = 0;
+        var uncompletedTodos = 0;
 
         // Get number of completed todos
         for(var i = 0; i < totalTodos; i++){
             if(this.todos[i].completed == true)
                 completedTodos++;
+            else
+                uncompletedTodos++;
         }
 
         // If everything's true, make everything false
@@ -79,7 +82,16 @@ var todoList = {
                 this.todos[i].completed = false;
             }
         }
-    }
+        else
+        {
+            for (var i = 0; i < totalTodos; i++)
+            {
+                this.todos[i].completed = true;
+            }
+        }
+    },
+
+
 }
 
 todoList.displayTodos();
@@ -88,11 +100,11 @@ todoList.addTodo('first');
 todoList.addTodo('second');
 todoList.addTodo('third');
 
-
+/*
 todoList.toggleCompleted(0);
 todoList.toggleCompleted(1);
 todoList.toggleCompleted(2);
-
+*/
 
 todoList.displayTodos();
 
