@@ -69,6 +69,10 @@ console.log(myHouse2);
 // these objects are equal because they point to the same location in memory
 console.log(myHouse1 == myHouse2);
 
+var myHouse3 = {color: 'blue'};
+var myHouse4 = {color: 'red'};
+
+console.log(myHouse3 == myHouse4);
 
 
 
