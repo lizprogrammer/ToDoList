@@ -35,15 +35,20 @@ var todoList = {
     },
 
     changeTodo: function(position, todoText){
+        if(isNaN(position))
+            position = 0;
+
         this.todos[position].todoText = todoText;
         //this.displayTodos();
 
     },
         toggleCompleted: function(position){
-        if(position == NaN)
+        if(isNaN(position))
             position = 0;
+
         var todo = this.todos[position];
         console.log(todo);
+
         this.todos[position].completed = !this.todos[position].completed;
         //this.displayTodos();
     },
@@ -95,12 +100,14 @@ var handlers = {
 
     displayTodos: function(){
         todoList.displayTodos();
+        view.displayTodos();
     },
 
     addTodo: function(){
         var addTodoTextInput = document.getElementById('addTodoTextInput');
         todoList.addTodo(addTodoTextInput.value);
         addTodoTextInput.value = '';
+        view.displayTodos();
     },
 
     changeTodo: function(){
@@ -111,21 +118,25 @@ var handlers = {
         // clear text box values
         changeTodoPositionInput.value = '';
         addTodoTextInput.value = '';
+        view.displayTodos();
     },
 
     deleteTodo: function(){
         var deleteTodoPositionInput = document.getElementById('deleteTodoPositionInput');
         todoList.deleteTodo(deleteTodoPositionInput.valueAsNumber);
+        view.displayTodos();
     },
 
     toggleCompleted: function(){
         var toggleCompletedPositionInput = document.getElementById('toggleCompletedPositionInput');
         todoList.toggleCompleted(toggleCompletedPositionInput.valueAsNumber);
         toggleCompletedPositionInput.value = '';
+        view.displayTodos();
     },
 
     toggleAll: function() {
         todoList.toggleAll();
+        view.displayTodos();
     }
 };
 
