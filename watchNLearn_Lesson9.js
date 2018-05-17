@@ -40,6 +40,8 @@ var todoList = {
 
     },
         toggleCompleted: function(position){
+        if(position == NaN)
+            position = 0;
         var todo = this.todos[position];
         console.log(todo);
         this.todos[position].completed = !this.todos[position].completed;
@@ -80,18 +82,19 @@ var todoList = {
 // 1. We want to get access to the display todos button.
 console.log("Hey is anyone there?");
 
+
 todoList.addTodo('first');
 todoList.addTodo('second');
 todoList.addTodo('third');
+
+
+todoList.toggleAll();
+todoList.displayTodos();
 
 var handlers = {
 
     displayTodos: function(){
         todoList.displayTodos();
-    },
-
-    toggleAll: function() {
-        todoList.toggleAll();
     },
 
     addTodo: function(){
@@ -119,7 +122,46 @@ var handlers = {
         var toggleCompletedPositionInput = document.getElementById('toggleCompletedPositionInput');
         todoList.toggleCompleted(toggleCompletedPositionInput.valueAsNumber);
         toggleCompletedPositionInput.value = '';
+    },
+
+    toggleAll: function() {
+        todoList.toggleAll();
     }
 };
+
+
+
+var view = {
+    displayTodos: function() {
+        var todosUl = document.querySelector('ul');
+        todosUl.innerHTML = '';
+
+        console.log(todosUl.length);
+
+        for (var i = 0; i <  todoList.todos.length; i++){
+            var todoLi = document.createElement('li');
+            var todo = todoList.todos[i];
+
+            var todoTextWithCompletion = '';
+            if(todo.completed === true){
+                todoTextWithCompletion = '(x) ' + todo.todoText;
+            }
+            else{
+                todoTextWithCompletion = '( ) ' + todo.todoText;
+            }
+
+            todoLi.textContent = todoTextWithCompletion;
+
+            //todoLi.textContent = todoList.todos[i].todoText;
+            todosUl.appendChild(todoLi);
+        }
+
+
+
+    }
+};
+
+view.displayTodos();
+
 
 
