@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5e38ef4-1c5b-459a-a3c2-eec0474cb0a5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index_v10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_v10.html" afterPath="$PROJECT_DIR$/index_v10.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watchNCode_v10.js" afterPath="$PROJECT_DIR$/watchNCode_v10.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +19,8 @@
       <file leaf-file-name="index_v10.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_v10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="295">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -28,8 +29,8 @@
       <file leaf-file-name="watchNCode_v10.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/watchNCode_v10.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="160" column="44" lean-forward="false" selection-start-line="160" selection-start-column="44" selection-end-line="160" selection-end-column="44" />
+            <state relative-caret-position="358">
+              <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,8 +60,22 @@
       <find>equal</find>
       <find>toggleAll</find>
       <find>toggle</find>
-      <find>todosUl</find>
       <find>toggleall</find>
+      <find>console</find>
+      <find>displayTodos</find>
+      <find>var todosUl</find>
+      <find>createDelete</find>
+      <find>todoText</find>
+      <find>displayTodos: fun</find>
+      <find>hand</find>
+      <find>deleteTodo</find>
+      <find>delete</find>
+      <find>document.querySelector</find>
+      <find>createDeleteButton</find>
+      <find>todosUl</find>
+      <find>display</find>
+      <find>li</find>
+      <find>append</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -93,16 +108,16 @@
         <option value="$PROJECT_DIR$/index_final.html" />
         <option value="$PROJECT_DIR$/runWithDebugger.js" />
         <option value="$PROJECT_DIR$/addEventListener.js" />
-        <option value="$PROJECT_DIR$/watchNCode_v10.js" />
         <option value="$PROJECT_DIR$/index_v10.html" />
+        <option value="$PROJECT_DIR$/watchNCode_v10.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="543" />
-    <option name="y" value="39" />
-    <option name="width" value="897" />
-    <option name="height" value="607" />
+    <option name="x" value="81" />
+    <option name="y" value="22" />
+    <option name="width" value="783" />
+    <option name="height" value="679" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -258,7 +273,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="543" y="39" width="897" height="607" extended-state="0" />
+    <frame x="81" y="22" width="783" height="679" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -651,14 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index_v10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/watchNLearn_Lesson9.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -667,10 +674,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index_v10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/watchNCode_v10.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="160" column="44" lean-forward="false" selection-start-line="160" selection-start-column="44" selection-end-line="160" selection-end-column="44" />
+        <state relative-caret-position="358">
+          <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
           <folding />
         </state>
       </provider>
