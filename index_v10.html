@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do Lists</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+        <h1>Todo List</h1>
+
+
+         <div>
+            <button onclick = "handlers.toggleAll()">Toggle All</button>
+        </div>
+
+        <div>
+            <button onclick = "handlers.addTodo()">Add</button>
+            <input id = "addTodoTextInput" type = "text">
+        </div>
+
+        <div>
+            <button onclick = "handlers.changeTodo()">Change Todo</button>
+            <input id = "changeTodoPositionInput" type = "number">
+            <input id = "changeTodoTextInput" type = "text">
+        </div>
+
+        <div>
+            <button onclick = "handlers.deleteTodo()">Delete</button>
+            <input id = "deleteTodoPositionInput" type = "number">
+        </div>
+
+        <div>
+            <button onclick = "handlers.toggleCompleted()">Toggle Completed</button>
+            <input id = "toggleCompletedPositionInput" type = "number">
+        </div>
+
+        <div>
+            <ul input id = "todoLi" type = "text">
+
+            </ul>
+        </div>
+
+
+        <script src = "watchNLearn_Lesson9.js"></script>
+</body>
+</html>
+
+
+
+
