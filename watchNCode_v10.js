@@ -136,7 +136,7 @@ var handlers = {
     deleteTodo: function(position){
 
         todoList.deleteTodo(position);
-        deleteTodoPositionInput.value = '';
+      //  deleteTodoPositionInput.value = '';
         view.displayTodos();
 
     },
