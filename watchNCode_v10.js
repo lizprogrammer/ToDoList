@@ -104,7 +104,8 @@ todoList.addTodo('second');
 todoList.addTodo('third');
 
 
-todoList.toggleAll();
+
+//todoList.toggleAll();
 todoList.displayTodos();
 
 var handlers = {
@@ -190,28 +191,27 @@ var view = {
         deleteButton.className = 'deleteButton';
 
         return deleteButton;
-    }
-};
+    },
 
+    setUpEventListeners: function()
+    {
         var todosUl = document.querySelector('ul');
-        todosUl.addEventListener('click', function(event){
-
+        todosUl.addEventListener('click', function(event)
+        {
             // Get the element that was clicked on.
             var elementClicked = event.target;
 
             // Check if elementClicked is a delete button.
-            if(elementClicked.className === 'deleteButton') {
+            if(elementClicked.className === 'deleteButton')
+            {
                 handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
-
             }
-
         });
-
-
-
-        console.log(todosUl.length);
+    }
+};
 
 view.displayTodos();
+view.setUpEventListeners();
 
 
 
